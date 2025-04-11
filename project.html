@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniella T. Franciscoco - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <section  id="home" class="home-section">
+        <div class="home-content">
+            <h1>PROJECT IN WEB DEVELOPMENT</h1>
+            <p>We offer professional services tailored to your needs, <br>including expert guidance, efficient solutions, <br>and personalized support. Our services include:</p>
+        </div>
+        <div class="lista">
+            <p>Services We Offer:</p>
+            <p>Web Design: Custom websites for your business.</p>
+            <p>Digital Marketing: Boost your online presence.</p>
+            <p>Consulting: Expert advice and strategies for growth.</p>
+            <p>E-commerce Solutions: Seamless online store setup.</p>
+            <p>Branding: Create a unique brand identity.</p>
+        </div>
+    </section>
+
+      
+<button class="menu-btn" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+  
+
+  <div id="menu" class="side-menu">
+    <nav>
+        <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+        <section id="about" class="about-section">
+           
+            <img src="image/81f34c2e-ca6c-4713-9268-638bc7cd5a94.jpg" alt="Daniella T. Franciscoco" class="profile-photo">
+            <div class="about-content">
+                <h2>About</h2>
+                <p><strong>Name:</strong> Daniella T. Franciscoco</p>
+                <p><strong>Course & Section:</strong> BSCS 1-Y2-1</p>
+                
+                <h3>BIO:</h3>
+                <p>I am a passionate web developer with a focus on creating engaging and user friendly websites. With a strong background in design and development, I particularly enjoy collaborating on the implementation of websites. I constantly learn and stay updated on the latest trends in technology and web design.</p>
+                
+                <h3>WORK EXPERIENCE:</h3>
+                <p><strong>Creative Solutions Agency</strong> | January 2022 - Present</p>
+                <p>As a Web Developer at Creative Solutions Agency, I work on the design and development of client websites, implementing clean code, intuitive navigation, and responsive design. I collaborate with design teams to enhance our content workflow.</p>
+                
+                <p><strong>Tech Innovations</strong> | June 2020 - December 2021</p>
+                <p>Built and maintained websites for various clients. My tasks included creating HTML/CSS templates, implementing JavaScript functionality, and ensuring websites were mobile-friendly.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Portfolio | Work</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-image-box">
+                        
+                        <img src="image/shop.jpg" alt="Web Design">
+                    </div>
+                    <h3>Online Store</h3>
+                    <p>Custom e-commerce solution</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-image-box">
+                        
+                        <img src="image/girl.jpg" alt="Digital Marketing">
+                    </div>
+                    <h3>Promotional/Marketing Pages</h3>
+                    <p>Responsive landing pages for campaigns</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-image-box">
+                        
+                        <img src="image/tablet.jpg" alt="Consulting">
+                    </div>
+                    <h3>Mobile-Friendly Websites</h3>
+                    <p>Responsive designs for all devices</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-container" id="contact" >
+            
+            
+            <div class="left-column">
+                <h1 class="contact">Contact</h1>
+                <p class="contact-description">
+                    Your feedback and inquiries are always welcome.<br>
+                    Contact me today!
+                </p>
+            </div>
+            
+            
+            <div class="right-column">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div class="contact-text">
+                            <span class="contact-label">Phone</span>
+                            +63 9773 224 709
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div class="contact-text">
+                            <span class="contact-label">Email</span>
+                            dtfrancisco0854qc@student.fatima.edu.ph
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div class="contact-text">
+                            <span class="contact-label">Address</span>
+                            1 Esperanza, Quezon City,<br>1118 Metro Manila
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© All Rights Reserved</p>
+            <div class="what"></div>
+            <a href="#home" class="back-to-top">Back to Top</a>
+        </div>
+        </footer>
+
+
+        <script>
+            function toggleMenu() {
+              const menu = document.getElementById("menu");
+              menu.classList.toggle("open");
+          
+              const lines = document.querySelectorAll('.menu-btn div');
+              
+              if (menu.classList.contains("open")) {
+                
+                lines[0].style.transform = "rotate(45deg) translateY(8px)";
+                lines[1].style.opacity = "0";
+                lines[2].style.transform = "rotate(-45deg) translateY(-8px)";
+              } else {
+                
+                lines[0].style.transform = "rotate(0) translateY(0)";
+                lines[1].style.opacity = "1";
+                lines[2].style.transform = "rotate(0) translateY(0)";
+              }
+            }
+          </script>
+    </div>
+</body>
+</html>
